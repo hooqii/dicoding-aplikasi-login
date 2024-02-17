@@ -5,13 +5,13 @@
  * Gunakan fungsi showPopUp() untuk menampilkan pop up error
  */
 
-// Komentar : Membuat variabel untuk setiap element view
+// Comment : Membuat variabel untuk setiap element view
 
 const loginFormElement = document.querySelector("#loginForm");
 const inputEmailElement = document.querySelector("#inputEmail");
 const inputPasswordElement = document.querySelector("#inputPassword");
 
-// Komentar : Membuat variabel yang memuat informasi email dan password
+// Comment : Membuat variabel yang memuat informasi email dan password
 
 const expectedEmail = "admin@dicoding.com";
 const expectedPassword = "superpassword";
@@ -21,7 +21,7 @@ loginFormElement.addEventListener("submit", function (event) {
 
   // TODO 1 : Mendapatkan input email dan password pengguna dari form.
 
-  // Komentar: Mendapatkan nilai dari inputan
+  // Comment: Mendapatkan nilai dari inputan
 
   const email = inputEmailElement.value;
   const password = inputPasswordElement.value;
@@ -30,7 +30,7 @@ loginFormElement.addEventListener("submit", function (event) {
   // Jika variabel email identik dengan expectedEmail dan password identik dengan expectedPassword, panggil fungsi goToHome().
   // Jika tidak, maka panggil fungsi showPopUp().
 
-  // Komentar: Melakukan pengecekan email dan passord sesuai dengan nilai yang tersimpan
+  // Comment: Melakukan pengecekan email dan passord sesuai dengan nilai yang tersimpan
 
   if (email == expectedEmail && password == expectedPassword) {
     goToHome();
